@@ -27,3 +27,39 @@ If you only need the **most likely** plaintext to be outputted, then add the arg
 ```
   python3 decrypt.py -one <YOUR CIPHERTEXT>
 ```
+**Important!**
+
+Using argument '-one' might result in a false decryption, for example:
+
+Trying to decrypt 'Hufaopun pz Sprlsf!!' with '-one' argument outputs: 'Wjupdejc eo Hegahu!!', while it *probably* should've been: 'Anything is  Likely!!'
+
+Without '-one' argument we would get the following list (percentages aren't yet implemented):
+```
+ % python3 decrypt.py -one 'Hufaopun pz Sprlsf!!'
+ Wjupdejc eo Hegahu!!    // Fakeness score: 0
+ Anything is Likely!!    // Fakeness score: 0
+ Qdojxydw yi Byaubo!!    // Fakeness score: 3
+ Gteznotm oy Roqkre!!    // Fakeness score: 3
+ Nalguvat vf Yvxryl!!    // Fakeness score: 6
+ Mzkftuzs ue Xuwqxk!!    // Fakeness score: 9
+ Sfqlzafy ak Dacwdq!!    // Fakeness score: 9
+ Hufaopun pz Sprlsf!!    // Fakeness score: 10
+ Lyjestyr td Wtvpwj!!    // Fakeness score: 10
+ Repkyzex zj Czbvcp!!    // Fakeness score: 10
+ Vitocdib dn Gdfzgt!!    // Fakeness score: 10
+ Bozuijoh jt Mjlfmz!!    // Fakeness score: 10
+ Cpavjkpi ku Nkmgna!!    // Fakeness score: 10
+ Kxidrsxq sc Vsuovi!!    // Fakeness score: 11
+ Uhsnbcha cm Fceyfs!!    // Fakeness score: 12
+ Ivgbpqvo qa Tqsmtg!!    // Fakeness score: 13
+ Pcniwxcv xh Axztan!!    // Fakeness score: 13
+ Tgrmabgz bl Ebdxer!!    // Fakeness score: 13
+ Xkvqefkd fp Ifhbiv!!    // Fakeness score: 13
+ Ercxlmrk mw Pmoipc!!    // Fakeness score: 13
+ Jwhcqrwp rb Urtnuh!!    // Fakeness score: 14
+ Dqbwklqj lv Olnhob!!    // Fakeness score: 14
+ Obmhvwbu wg Zwyszm!!    // Fakeness score: 15
+ Ylwrfgle gq Jgicjw!!    // Fakeness score: 15
+ Fsdymnsl nx Qnpjqd!!    // Fakeness score: 17
+ Zmxsghmf hr Khjdkx!!    // Fakeness score: 18
+```
