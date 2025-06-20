@@ -1,5 +1,5 @@
-# Decrypt-Caeser-ciphertext
-Python script to decipher the Caeser ciphertext (all letters are rotated alphabetically by a constant amount of positions).
+# Decrypt-Caesar-ciphertext
+Python script to decipher the Caesar ciphertext (all letters are rotated alphabetically by a constant amount of positions).
  
 **Usage:**
 
