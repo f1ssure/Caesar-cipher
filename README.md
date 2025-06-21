@@ -13,19 +13,19 @@ Python script to decipher the Caesar ciphertext (all letters are rotated alphabe
 
 **Windows**
 ```
-  py decrypt.py <YOUR CIPHERTEXT>
+  py decrypt.py 'YOUR CIPHERTEXT'
 ```
 
 **macOS**
 ```
-  python3 decrypt.py <YOUR CIPHERTEXT>
+  python3 decrypt.py 'YOUR CIPHERTEXT'
 ```
 
 The command above will list all the possible plaintexts that could have been encrypted along with a percentage, that indicates the likeliness of it (the most natural plaintexts come up first)
 
 If you only need the **most likely** plaintext to be outputted, then add the argument '-one' before the ciphertext like this (example for **macOS**):
 ```
-  python3 decrypt.py -one <YOUR CIPHERTEXT>
+  python3 decrypt.py -one 'YOUR CIPHERTEXT'
 ```
 **Important!**
 
